@@ -52,7 +52,7 @@ pipeline {
 
             steps {
                 sh "echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin"
-                sh "docker push node-app:${commitHash.take(9)}"
+                sh "docker push gsiddharth276/node-app:${commitHash.take(9)}"
             }
         }        
 
