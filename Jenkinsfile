@@ -42,7 +42,7 @@ pipeline {
             
             steps {
                 sh "echo [+] Building the container image"
-                sh "docker build -t node-app:${commitHash.take(9)} ."
+                sh "docker build -t gsiddharth276/node-app:${commitHash.take(9)} ."
                 sh "echo [+] The Tag for the built image: ${commitHash}"
             }
 
